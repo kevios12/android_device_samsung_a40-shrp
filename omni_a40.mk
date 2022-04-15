@@ -23,10 +23,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Charger
-PRODUCT_PACKAGES += \
-    charger_res_images
-
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/a40/recovery/root,recovery/root)
 
 ## Device identifier. This must come after all inclusions
